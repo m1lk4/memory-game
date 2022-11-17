@@ -1,4 +1,3 @@
-
 import os
 from PIL import Image, ImageTk
 import tkinter
@@ -75,7 +74,7 @@ def create_board(list_cards, canvas):
     # save images and rects in lists for reference
     cards = []
     rects = []
-    i = 0   # reference the index of the list for save images and rects
+    i = 0   # reference the index of the list for saving images and rects
     # create images and rects and locate them in five columns and two rows
     for col in range(4):
         for row in range(3):
@@ -151,10 +150,8 @@ def image_winner(canvas):
 
 def make_canvas(width, height, title):
     """
-    DO NOT MODIFY
     Creates and returns a drawing canvas
-    of the given int size with a blue border,
-    ready for drawing.
+    of the given int size.
     """
     top = tkinter.Tk()
     top.minsize(width=width, height=height)
